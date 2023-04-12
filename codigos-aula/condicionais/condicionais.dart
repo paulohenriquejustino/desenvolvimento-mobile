@@ -28,6 +28,6 @@ void main() {
   } else if (media >= 5 && media < 7.5) {
     print('Aluno em recuperação');
   } else {
-    print('Aluno Reprovado!')
+    print('Aluno Reprovado!');
   }
 }
