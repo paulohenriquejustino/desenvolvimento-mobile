@@ -67,5 +67,8 @@ void main() {
     print('');
     print("O valor total a ser pago será de  ${soma.toStringAsFixed(2)}");
     break; // Fim do case
+
+
+    
   }
 }
