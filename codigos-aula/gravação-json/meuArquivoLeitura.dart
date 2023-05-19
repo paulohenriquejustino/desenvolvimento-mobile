@@ -1,17 +1,15 @@
 import 'dart:io';
+import 'dart:convert';
+
+
 
 void main() {
   final caminho = File('teste1_json.txt');
 
-  final mostrarArquivo = fazerLeitura(caminho);
-  
-  print(mostrarArquivo); // Imprimir resultado da leitura
-}
-
-
-String fazerLeitura(File caminho){
+  // Lendo o conteudo do arquivo e exibindo na tela
   String conteudo = caminho.readAsStringSync();
   print(conteudo);
+
 
   // Separando as informações por linha e salvando em Map
   Map<String, dynamic> informacoes = {};
@@ -22,9 +20,8 @@ String fazerLeitura(File caminho){
     String chave = campos[0];
     dynamic valor = campos[1];
     informacoes.putIfAbsent(chave, () => valor);
+    
   }
 
   print(informacoes);
-  
-  return conteudo; // Retorna o conteúdo do arquivo
 }
