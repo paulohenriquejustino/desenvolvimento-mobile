@@ -1,4 +1,3 @@
-Média Aritmética: 23.0
-Média Ponderada: 20.0
-Média Ponderada: 236.9
-Média Ponderada: 29.0
+Média Aritmética: 20.0
+Média Ponderada: 23.0
+
