@@ -26,5 +26,5 @@ void excluirDados(){
   String novoConteudo = linhas.join('\n');
 
   // Remontando minha lista com o arquivo removido...
-  caminho.writeAsStringSync('Média Aritmética: $novoConteudo\n');
+  caminho.writeAsStringSync(novoConteudo);
 }

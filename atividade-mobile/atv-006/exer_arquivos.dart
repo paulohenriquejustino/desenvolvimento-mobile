@@ -6,18 +6,23 @@ import 'meuArquivoLeitura.dart';
 import 'meuArquivoExclusao.dart';
 import 'meuArquivoUpdate.dart';
 
+
+
 void main() {
   // Declarando minha flag para finalizar o progama...
   bool flag = false;
+
   final caminho = File('teste1_json.txt');  // definindo o caminho para ser mostrando...
  
 
   String lerArquivo(String caminho) {
     final arquivo = File(caminho);
     String conteudo = arquivo.readAsStringSync(); // lendo todo o conteudo...
+
     return conteudo;
   }
 
+  
   while (!flag) {
     print('Escolha uma opção: ');
    
@@ -56,12 +61,10 @@ void main() {
       break;
 
       case 3:
-      // chamando minhas funções criada nos outros codigos...
       excluirDados();
       break;
 
       case 4:
-      // chamando minhas funções criada nos outros codigos...
       atualizarDados();
       break;
 

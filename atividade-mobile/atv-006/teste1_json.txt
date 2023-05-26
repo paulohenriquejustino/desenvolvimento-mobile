@@ -1,1 +1,1 @@
-Média Aritmética: 50
+Média Aritmética: 10.0

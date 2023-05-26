@@ -6,6 +6,8 @@ final caminho = File('teste1_json.txt');
 void main () {
   atualizarDados();
 
+
+
 }
 
 void atualizarDados() {
@@ -34,16 +36,10 @@ void atualizarDados() {
 
   // Jutando as linhas novamente  em uma unica String...
   String novoConteudo =  linhas.join('\n');
-  print(novoConteudo);
-  
+
   // Fazendo a substituição do antigo conteudo pelo o novo...
-  print('');
-
-  caminho.writeAsStringSync('Média Aritmética: $novoValor\n',);
+  caminho.writeAsStringSync('Média Aritmética: $novoValor\n');
   print('Seus dados foi atualizado com sucesso!');
-
-
-  
 
 }
 
